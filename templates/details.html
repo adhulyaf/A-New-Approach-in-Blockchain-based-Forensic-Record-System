@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("/static/search.jpg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .header a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #ddd;
+    }
+    .header a:hover {
+      background-color: #ccc;
+    }
+    .message {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .message div {
+      margin-bottom: 10px;
+    }
+    .message strong {
+      font-weight: bold;
+    }
+    .message hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    .close{
+      color: red;
+      padding-left: 300px;
+      font-size: x-large;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="book.html">Report Incident</a>
+      <a href="search.html">Search</a>
+      <a href="index.html">Logout</a>
+    </div>
+    <div class="message">
+      <div><strong>Record ID:</strong> {{ res.id }}</div>
+      <div><strong>Case Number:</strong> {{ res.casenum }}</div>
+      <div><strong>Victim's Name:</strong> {{ res.pname }}</div>
+      <div><strong>Age:</strong> {{ res.age }}</div>
+      <div><strong>Gender:</strong> {{ res.gender }}</div>
+      <div><strong>Physical Characteristics:</strong> {{ res.phy }}</div>
+      <div><strong>Unique Features:</strong> {{ res.uni }}</div>
+      <div><strong>External Injury:</strong> {{ res.ex }}</div>
+      <div><strong>Internal Injury:</strong> {{ res.in }}</div>
+      <div><strong>Cause of Death:</strong> {{ res.death }}</div>
+      <div><strong>Evidence:</strong> {{ res.evidence }}</div>
+      <div><strong>Examination Result:</strong> {{ res.result }}</div>
+      <br />
+      <hr />
+      <div class="close"><strong>CASE CLOSED</strong></div>
+      <hr />
+    </div>
+  </div>
+</body>
+</html>

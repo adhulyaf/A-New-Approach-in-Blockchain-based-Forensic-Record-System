@@ -1,0 +1,19 @@
+{
+    "text": "76580roshan22Malewell built,tall, fair,blue eyesstudsmashedyes accidentTires,blood stains,witnessesdrink and drive",
+    "prev_hash": "9ca73c8ef872804e4d123bdc12ffb2bb2af974b9af1e1f11ff9522b998a1a12f",
+    "timestamp": 1711928391.5623488,
+    "proof": 95,
+    "index": "2",
+    "record_id": "7",
+    "cnum": "6580",
+    "name": "roshan",
+    "age": "22",
+    "gender": "Male",
+    "phy": "well built,tall, fair,blue eyes",
+    "uni": "stud",
+    "ex": "smashed",
+    "int": "yes",
+    "death": " accident",
+    "evidence": "Tires,blood stains,witnesses",
+    "vresult": "drink and drive"
+}

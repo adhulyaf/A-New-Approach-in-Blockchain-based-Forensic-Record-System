@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Records</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("/static/mouse.jpg");
+      background-size: cover;
+      ;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .title {
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+
+    .input {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: #333;
+      font-size: 16px;
+      padding: 12px 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .submit {
+      background-color: #08d;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 12px 0;
+      width: 100%;
+    }
+
+    .submit:hover {
+      background-color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="users_home.html">Home</a>
+  </div>
+
+  <div class="container">
+    <div class="title">Add Forensic Record</div>
+    <form action="/adddata" method="post">
+      <div class="subtitle">Enter the details:</div>
+
+      <div class="input-container">
+        <input id="rid" class="input" type="text" placeholder="Record ID" name="rid" required>
+      </div>
+
+      <div class="input-container">
+        <input id="cnum" class="input" type="text" placeholder="Case Number" name="cnum">
+      </div>
+
+      <div class="input-container">
+        <input id="name" class="input" type="text" placeholder="Victim's Name" name="name" required>
+      </div>
+
+      <div class="input-container">
+        <input id="age" class="input" type="text" placeholder="Age" name="age" required>
+      </div>
+
+      <div class="input-container">
+        <input id="gender" class="input" type="text" placeholder="Gender" name="gender" required>
+      </div>
+
+      <div class="input-container">
+        <input id="phy" class="input" type="text" placeholder="Physical Characteristics" name="phy" required>
+      </div>
+
+      <div class="input-container">
+        <input id="uni" class="input" type="text" placeholder="Unique Features" name="uni" required>
+      </div>
+
+      <div class="input-container">
+        <input id="ex" class="input" type="text" placeholder="External Injury" name="ex" required>
+      </div>
+
+      <div class="input-container">
+        <input id="int" class="input" type="text" placeholder="Internal Injury" name="int" required>
+      </div>
+
+      <div class="input-container">
+        <input id="death" class="input" type="text" placeholder="Cause of Death" name="death" required>
+      </div>
+
+      <div class="input-container">
+        <input id="evidence" class="input" type="text" placeholder="Evidence" name="evidence" required>
+      </div>
+
+      <div class="input-container">
+        <input id="result" class="input" type="text" placeholder="Examination Result" name="result" required>
+      </div>
+
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

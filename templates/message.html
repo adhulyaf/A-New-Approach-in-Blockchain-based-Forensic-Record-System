@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .center {
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    .reference {
+      font-size: 24px;
+      color: #555;
+      margin-top: 10px;
+    }
+    hr {
+      border: none;
+      border-top: 2px solid #ddd;
+      margin: 20px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <h1>Submitted Successfully!</h1>
+      <div class="reference">Reference Number: <span id="ref">{{ref}}</span></div>
+    </div>
+    <hr />
+    <div class="center">
+      <a href="index.html">Go Back</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("/static/img6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .side-panel {
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 2500px;
+        height: 80px;
+        padding-left: 30px;
+      }
+
+      .side-panel ul {
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .side-panel ul li {
+        margin-right: 50px;
+      }
+
+      .side-panel ul li:last-child {
+        margin-right: 0;
+      }
+
+      .side-panel ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .side-panel ul li a:hover {
+        color: #ffffff;
+      }
+
+      .main-content .main2 {
+        font-size: 120px;
+        color: #fff;
+      }
+      .main-content {
+        color: #ffffff;
+        font-size: 40px;
+        padding-left: 60px;
+      }
+      .side-panel {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-panel">
+        <ul>
+          <li>
+            <img src="/static/logo.JPG" alt="" height="50px" width="100px" />
+          </li>
+          <li><a href="index.html" class="asideAnchor">Home</a></li>
+          <li><a href="users.html" class="asideAnchor">Users</a></li>
+          <li><a href="panel.html" class="asideAnchor">Panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1>A New Approach In Forensic <br />Blockchain</h1>
+    </div>
+  </body>
+</html>
